@@ -59,23 +59,18 @@ table {
   display: grid;
   min-height: 100vh;
   min-width: 100%;
-  grid-template-columns: 1fr 3fr;
-  grid-auto-rows: 1fr 50px;
+  grid-template-columns: 1.5fr 3fr;
+  grid-template-rows: 1fr;
   grid-template-areas: "sidebar  content"
-  "footer   footer";
+  "sidebar   content";
 }
 
 .sidebar {
   grid-area: sidebar;
-  background-color: #ff6542;
+  background-color: #0D5D56;
 }
 
 .content {
   grid-area: content;
-  background-color: #e0cba8;
-}
-
-.footer {
-  grid-area: footer;
-  background-color: #779fa1;
+  background-color: #fffff0;
 }
