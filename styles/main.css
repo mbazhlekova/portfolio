@@ -52,6 +52,22 @@ table {
 }
 
 /*=========================
+    Global
+==========================*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*===========================
+    Helpers
+============================*/
+
+.block {
+  margin-top: 3rem;
+}
+
+/*=========================
     Grid 
   =========================*/
 
@@ -59,7 +75,7 @@ table {
   display: grid;
   min-height: 100vh;
   min-width: 100%;
-  grid-template-columns: 1.5fr 3fr;
+  grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr;
   grid-template-areas: "sidebar  content"
   "sidebar   content";
@@ -67,10 +83,84 @@ table {
 
 .sidebar {
   grid-area: sidebar;
-  background-color: #0D5D56;
+  background: linear-gradient(
+    rgba(13, 93, 86, .6), 
+    rgba(13, 93, 86, .6)
+  ), url("background.jpg") center;
 }
 
 .content {
   grid-area: content;
   background-color: #fffff0;
+}
+
+/* ==============================
+    Sidebar
+================================*/
+
+.sidebar-container {
+  padding: 3rem;
+  min-height: 100vh;
+}
+
+.sidebar-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar-profile-photo {
+  align-self: center;
+  border-radius: 50%;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.sidebar-profile-name {
+  padding-top: 1rem;
+  align-self: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fffff0;
+  font-weight: 500;
+}
+
+.sidebar-profile-title {
+  padding-top: .5rem;
+  align-self: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fffff0;
+  font-weight: 300;
+}
+
+.sidebar-menu {
+  line-height: 2rem;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fffff0;
+  text-transform: uppercase;
+}
+
+.sidebar-menu:last-of-type ul {
+  padding-top: 2rem;
+}
+
+.sidebar-menu a {
+  color: #fffff0;
+  text-decoration: none;
+}
+
+.sidebar-menu li > a:hover {
+  font-weight: 600;
+}
+
+.sidebar-menu li > a:hover::after {
+  content: " \f105 ";
+  padding-left: 3px;
+  font-family: FontAwesome;
+}
+
+.sidebar-social-title {
+  font-size: 13px;
 }
