@@ -164,3 +164,33 @@ body {
 .sidebar-social-title {
   font-size: 13px;
 }
+
+.active {
+  font-weight: 600;
+}
+
+.active::after {
+  content: " \f105 ";
+  padding-left: 3px;
+  font-family: FontAwesome;
+}
+
+/* ==============================
+    Resume
+================================*/
+
+.resume-container {
+  padding: 3rem;
+}
+
+.resume-title {
+  line-height: 1;
+  color: #555;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+
+
