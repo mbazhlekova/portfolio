@@ -1,12 +1,13 @@
 import React from 'react';
 
+import profilePhoto from './photo.jpeg';
 import './Sidebar.css';
 
 const Sidebar = () => (
   <aside className="sidebar">
     <div className="sidebar-container">
       <div className="sidebar-profile">
-        <img className="sidebar-profile-photo" src="images/photo.jpeg" alt="Profile photo" />
+        <img className="sidebar-profile-photo" src={profilePhoto} alt="Profile photo" />
         <h1 className="sidebar-profile-name">Maria Bazhlekova</h1>
         <h2 className="sidebar-profile-title">Software Developer</h2>
       </div>
@@ -19,7 +20,7 @@ const Sidebar = () => (
             <a href="#">About</a>
           </li>
           <li>
-            <a href="#">Skils</a>
+            <a href="#">Skills</a>
           </li>
         </ul>
         <ul>
